@@ -63,6 +63,7 @@ module.exports = function(app) {
     router.post("/command", (req, res) => {
       let err = sendCommand(req.body)
       if ( err ) {
+        app.error(err)
         res.status(500).send(err)
       } else {
         res.send("Executed command for plugin " + plugin.id)
@@ -121,7 +122,7 @@ module.exports = function(app) {
       udpAddress : {
         type: 'number',
         title: 'The UDP Port',
-        default: 33333
+        default: 10110
       },
     }
   }
