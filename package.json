@@ -1,0 +1,22 @@
+{
+  "name": "signalk-nmea0183-autopilot",
+  "version": "0.0.1",
+  "description": "Plugin that controls an NMEA 0183 autopilot",
+  "main": "index.js",
+  "scripts": {
+    "test": "$NODE $npm_package_main"
+  },
+  "keywords": [
+    "signalk-node-server-plugin"
+  ],
+  "author": "scott@scottbender.net",
+  "license": "ISC",
+  "dependencies": {
+    "baconjs": "^0.7.88",
+    "lodash": "^4.17.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sbender9/signalk-nmea0183-autopilot"
+  }
+}
